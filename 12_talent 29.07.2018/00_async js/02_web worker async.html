@@ -5,9 +5,9 @@
     <script>
         var blob = new Blob(
             [`onmessage = function (e) {
-                console.log("worker strted to run ithe loop "+e.data + " times");
+                console.log("worker started to run the loop "+e.data + " times");
                 for (let i = 0; i < e.data; i++); 
-                console.log("worker ended to run ithe loop "+e.data + " times");
+                console.log("worker ended to run the loop "+e.data + " times");
                 postMessage("<p>funcV4 END</p>");
                 };`], 
             { type: "text/javascript" });
